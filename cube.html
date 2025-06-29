@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube{
+            height: 100px;
+            width: 100px;
+            background-color: black;    
+            margin: 100px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 1s;
+            transform-origin: bottom;
+
+        
+        }
+        .cube div{
+           position: absolute;
+           
+        }
+        .front{
+            height: 100px;
+            width: 100px;
+           background-color: rgb(136, 255, 0);
+           transform-origin: top;
+           transform: rotateX(90deg)
+           
+        }
+        .back{
+            height:100px;
+            width: 100px;
+            background-color:red;
+        }
+        
+        .cube:hover{
+            transform: rotateX(90deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="front"></div>
+        <div class="back"></div>
+    </div>
+</body>
+</html>
